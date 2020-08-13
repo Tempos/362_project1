@@ -25,11 +25,11 @@ def bucket_sorting(lst: (list, str)):
     lst : list     sorted list.
 
     """
-    buckets = list()
-    result = list()
+    buckets = []
+    result = []
     if isinstance(lst, str):
         lst = list(map(int, lst.split()))
-    for bucket in range(len(lst)):
+    for _ in lst:
         buckets.append(list())
     i = 1
     for item in lst:

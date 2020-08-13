@@ -64,7 +64,7 @@ def ways_to_paint_fence(number_posts: int, number_colors: int):
         if number_posts == 0:
             return 0
 
-        if number_posts == 1:
+        elif number_posts == 1:
             return number_colors
 
         same = number_colors

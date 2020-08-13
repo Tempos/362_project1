@@ -15,9 +15,7 @@ def counting_sort(data):
     for v in member_list:
         counters[v - min_number] += 1
     result = []
-    count = -1
-    for i in counters:
-        count += 1
+    for count, i in enumerate(counters):
         result.extend([count + min_number] * i)
     print(result)
     return result

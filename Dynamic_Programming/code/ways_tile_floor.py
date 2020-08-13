@@ -28,9 +28,7 @@ def ways_tile_floor(n_size, m_size):
     if len(str(n_size)) > 3 or len(str(m_size)) > 3:
         raise ValueError
     m_size = int(m_size)
-    count = []
-    for i in range(n_size + 2):
-        count.append(0)
+    count = [0 for _ in range(n_size + 2)]
     count[0] = 0
 
     for i in range(1, n_size + 1):
